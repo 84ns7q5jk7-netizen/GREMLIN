@@ -1,0 +1,7 @@
+node_modules/
+.env
+*.log
+cloudflared
+cloudflared.tgz
+dist/
+.DS_Store

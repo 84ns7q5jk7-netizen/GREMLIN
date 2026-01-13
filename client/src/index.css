@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #fbbf24;
+}
+
+.glass-panel {
+  @apply bg-[#3f3a50]/40 backdrop-blur-md border border-white/5 rounded-2xl shadow-lg;
+}
+
+.input-neon {
+  @apply bg-[#1f1b29]/60 border border-white/5 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-yellow-500/50 focus:bg-[#1f1b29]/80 transition-all;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-400 hover:to-amber-500 text-black font-bold rounded-xl shadow-[0_0_20px_#fbbf244d] hover:shadow-[0_0_30px_#fbbf2480] transition-all;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
